@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtuelle Umgebung
+.venv/
+venv/
+
+# Daten und temporäre Dateien
+*.csv
+*.parquet
+*.log
+
+# Jupyter-Notebooks
+*.ipynb_checkpoints/
+
+# Betriebssystem-spezifisch
+.DS_Store
+Thumbs.db
