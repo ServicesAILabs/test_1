@@ -19,7 +19,7 @@ def clean_number(input_num) -> float:
     """ Convert to float, erase Not numeric exept - .
 
     Args:
-        input_num (int, float, str): Only numbers and "-", "." is filtered
+        input_num (int, float, str): Only numbers and "-", "." isn`t filtered
 
     Returns:
         float: -12,400 $ = -12400
