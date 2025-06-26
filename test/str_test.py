@@ -24,6 +24,10 @@ class TestCleanNumber(unittest.TestCase):
     def test_invalid_string(self):
         with self.assertRaises(ValueError):
             clean_number("abc xyz")
+            
+    def test_none_input(self):
+        with self.assertRaises(ValueError):
+            clean_number(None)
 
 if __name__ == '__main__':
     unittest.main()
