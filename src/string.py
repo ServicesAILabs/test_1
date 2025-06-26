@@ -28,7 +28,7 @@ def clean_number(input_num) -> float:
         return float(input_num)
     
     try:
-        cleaned_str = " ".join(filter(lambda x: x in "0123456789.-", str(input_num)))
+        cleaned_str = "".join(filter(lambda x: x in "0123456789.-", str(input_num)))
         return float(cleaned_str)
     except (TypeError, ValueError) as e:
         raise ValueError(f"Convert Error: {e} ") from e
