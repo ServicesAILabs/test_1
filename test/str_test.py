@@ -1,14 +1,16 @@
-
 # UnitTests for string.py Helper
 
 import sys
 import os
 import unittest
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+sys.path.insert(
+    0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src"))
+)
 print(sys.path)
 
 from string_utils import clean_number
+
 
 class TestCleanNumber(unittest.TestCase):
 
@@ -24,10 +26,11 @@ class TestCleanNumber(unittest.TestCase):
     def test_invalid_string(self):
         with self.assertRaises(ValueError):
             clean_number("abc xyz")
-            
+
     def test_none_input(self):
         with self.assertRaises(ValueError):
             clean_number(None)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
